@@ -90,3 +90,55 @@ Select max(salary) from employee )))
 
 
 -- Another type of subquery 
+
+
+
+
+
+-- Group by 
+
+Select * from employee;
+
+
+Select department_id, count(id) as EmployeesInEachDept
+from employee group by department_id
+
+
+Select country_id, Count(state) from location 
+group by country_id;
+
+Select department_id, max(salary) from employee group by 
+department_id;
+
+--Write a query to display the department id and
+--the number of managers in the department. 
+--Display the records sorted in ascending
+--order based on department name.
+--Give an alias to the number of managers as 
+
+
+
+Select * from manager;
+
+Select department_id, count(employee_id) from manager  group by department_id;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
